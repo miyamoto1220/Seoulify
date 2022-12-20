@@ -1,0 +1,168 @@
+/* SETTING
+------------------------------*/
+/* BASE
+------------------------------*/
+html {
+  font-size: 87.5%;
+}
+@media (min-width: 800px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+body {
+  color: #32353C;
+  font-family: "Helvetica", "Helvetica Neue", "Yu Gothic", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+  line-height: 1.7142857143;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* BLOCK
+------------------------------*/
+.header {
+  margin-bottom: 6em;
+}
+.header__inner {
+  max-width: 1920px;
+  width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header__back {
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 9999;
+  position: fixed;
+  width: 100%;
+}
+.header__nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__ul ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.header__ul ul li {
+  list-style: none;
+  margin-left: 32px;
+}
+.header__ul ul .hot {
+  color: #B79B6C;
+}
+
+.footer {
+  text-align: center;
+  color: #fff;
+  background-color: #32353C;
+  padding: 6em;
+}
+.footer__inner {
+  max-width: 1920px;
+  width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.unit__copy {
+  margin-bottom: 1.5em;
+}
+.unit__title {
+  margin-bottom: 0.4761904762em;
+}
+
+.btn {
+  display: block;
+  width: 185px;
+  color: #fff;
+  background-color: #32353C;
+  text-align: center;
+  padding: 1.5em;
+}
+
+.btn-g {
+  display: block;
+  width: 100px;
+  color: #fff;
+  background-color: #B79B6C;
+  text-align: center;
+  padding: 1em;
+  position: absolute;
+  top: 21px;
+  left: 21px;
+}
+
+.btn-position {
+  position: relative;
+  margin-bottom: 2em;
+}
+
+.hot {
+  color: #B79B6C;
+}
+
+/* index.html
+------------------------------*/
+.main__inner {
+  max-width: 1920px;
+  width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main__title {
+  margin-bottom: 56px;
+}
+.main__title h2 {
+  margin-top: 0.875em;
+  margin-bottom: 1.3125em;
+}
+.main__title h2 .hot {
+  color: #B79B6C;
+}
+
+/* cotton */
+.cotton__all {
+  margin-bottom: 6em;
+}
+
+/* soft */
+.soft {
+  background-color: #F4F4F4;
+  padding-top: 6em;
+  padding-bottom: 6em;
+}
+
+/* share */
+.share {
+  margin: 6.2142857143em 0;
+}
+.share h2 {
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+.share img {
+  margin-bottom: 56px;
+}
+
+/* banner */
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,197 @@
+@charset "utf-8";
+
+/* SETTING
+------------------------------*/
+$color-bg: #F4F4F4;
+$color-text: #32353C;
+$color-button-g: #B79B6C;
+
+@mixin mq-pc() {
+   @media (min-width:800px) {
+      @content;
+   }
+}
+
+@mixin inner($w: 1920) {
+   max-width: $w + px;
+   width: 88%;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+@function rem($value) {
+   @return ($value/15)+rem;
+}
+
+@mixin flex($a: stretch, $j: space-between) {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: $j;
+   align-items: $a;
+}
+
+/* BASE
+------------------------------*/
+html {
+   font-size: (14/16) * 100%;
+
+   @include mq-pc() {
+      font-size: (16/16) * 100%;
+   }
+}
+
+body {
+   color: $color-text;
+   font-family: "Helvetica", "Helvetica Neue", "Yu Gothic", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+   line-height: (24/14);
+}
+
+img {
+   max-width: 100%;
+   height: auto;
+   vertical-align: bottom;
+}
+
+a {
+   text-decoration: none;
+}
+
+/* BLOCK
+------------------------------*/
+.header {
+   margin-bottom: (84/14)+em;
+
+   &__inner {
+      @include inner();
+   }
+
+   &__back {
+      background-color: rgba(255, 255, 255, 0.8);
+      z-index: 9999;
+      position: fixed;
+      width: 100%
+   }
+
+   &__nav {
+      @include flex(center);
+   }
+
+   &__ul ul {
+      @include flex();
+
+      li {
+         list-style: none;
+         margin-left: 32px;
+      }
+
+      .hot {
+         color: $color-button-g;
+      }
+   }
+}
+
+.footer {
+   text-align: center;
+   color: #fff;
+   background-color: $color-text;
+   padding: (84/14)+em;
+
+   &__inner {
+      @include inner();
+   }
+}
+
+.card {
+   @include flex(center);
+}
+
+.unit {
+   &__copy {
+      margin-bottom: (21/14)+em;
+   }
+
+   &__title {
+      margin-bottom: (10/21)+em;
+   }
+}
+
+.btn {
+   display: block;
+   width: 185px;
+   color: #fff;
+   background-color: $color-text;
+   text-align: center;
+   padding: (21/14)+em;
+}
+
+.btn-g {
+   display: block;
+   width: 100px;
+   color: #fff;
+   background-color: $color-button-g;
+   text-align: center;
+   padding: (14/14)+em;
+   position: absolute;
+   top: 21px;
+   left: 21px;
+}
+
+.btn-position {
+   position: relative;
+   margin-bottom: (28/14)+em;
+}
+
+.hot {
+   color: $color-button-g;
+}
+
+/* index.html
+------------------------------*/
+.main {
+   &__inner {
+      @include inner();
+   }
+
+   &__title {
+      margin-bottom: 56px;
+   }
+
+   &__title h2 {
+      margin-top: (28/32)+em;
+      margin-bottom: (42/32)+em;
+   }
+
+   &__title h2 .hot {
+      color: $color-button-g;
+   }
+}
+
+/* cotton */
+.cotton {
+   &__all {
+      margin-bottom: (84/14)+em;
+   }
+}
+
+/* soft */
+.soft {
+   background-color: $color-bg;
+   padding-top: (84/14)+em;
+   padding-bottom: (84/14)+em;
+}
+
+/* share */
+.share {
+   margin: (87/14)+em 0;
+
+   h2 {
+      text-align: center;
+      margin-bottom: (48/32)+em;
+   }
+
+   img {
+      margin-bottom: 56px;
+   }
+}
+
+/* banner */
